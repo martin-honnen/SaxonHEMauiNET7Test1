@@ -5,7 +5,7 @@ namespace SaxonHEMauiNET7Test1;
 public partial class MainPage : ContentPage
 {
 
-    private static readonly Processor processor = new Processor(true);
+    private static readonly Processor processor = new(true);
 
 	public MainPage()
 	{
@@ -16,7 +16,7 @@ public partial class MainPage : ContentPage
 
     private void SaxonDateTest_Clicked(object sender, EventArgs e)
     {
-
+        DateResult.Text = processor.newXPathCompiler().evaluateSingle("current-dateTime()", null).getStringValue();
     }
 }
 

@@ -34,6 +34,9 @@
                 Clicked="SaxonDateTest_Clicked"
                 HorizontalOptions="Center" />
 
+            <Label x:Name="DateResult"
+               HorizontalOptions="Center"/>
+
         </VerticalStackLayout>
     </ScrollView>
 
